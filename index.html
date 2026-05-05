@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MFF — MultiFandom Flood</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<div class="bg-dots"></div>
+<div class="side-label">MultiFandom Flood <b>·</b> Telegram <b>·</b> 2025</div>
+
+<div class="page">
+  <header>
+    <div>
+      <div class="logo-eyebrow">Добро пожаловать</div>
+      <div class="logo-main">MFF<em>.</em></div>
+    </div>
+  </header>
+
+  <!-- HOME -->
+  <section id="home" class="content-section active">
+    <div class="home-layout">
+      <div class="home-left">
+        <div class="big-title">
+          <span class="w1">ОБЪЕДИНЯЯ</span>
+          <span class="w2">ВСЕЛЕННЫЕ</span>
+          <span class="w3">ВСЕЛЕННЫЕ</span>
+        </div>
+        <p class="home-desc">Лучший флуд в Telegram по всем фандомам — <em>по крайней мере самый функциональный.</em></p>
+        <p class="home-desc" style="margin-top:10px;">Прочитай правила из инфо-канала перед подачей заявки.</p>
+        <button class="cta-btn" onclick="openModal()">
+          <div class="cta-box"><i class="fas fa-arrow-right"></i></div>
+          <div class="cta-line"></div>
+          <span>Подать заявку</span>
+        </button>
+      </div>
+      <div class="home-right">
+        <div class="home-meta">
+          <div class="meta-item">
+            <div class="meta-num">∞</div>
+            <div class="meta-label">Фандомов</div>
+          </div>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <div class="meta-num">01</div>
+            <div class="meta-label">Лучший флуд</div>
+          </div>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <div class="meta-num">24<span style="font-size:1.1rem;color:var(--mid)">/7</span></div>
+            <div class="meta-label">Онлайн</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAFF -->
+  <section id="staff" class="content-section">
+    <div class="section-header">
+      <div class="section-over">Состав проекта</div>
+      <div class="section-big">КОМАНДА</div>
+    </div>
+    <div class="admin-list">
+      <div class="admin-block">
+        <div class="admin-idx">01</div>
+        <div class="admin-center">
+          <div class="admin-name-big">Финн</div>
+          <div class="admin-roles-row"><span class="admin-badge">Основатель</span><span class="admin-badge">Владелец</span></div>
+        </div>
+        <div class="admin-right"><div class="admin-contact-lbl">Связь</div><div class="admin-handle">@twhddlstn</div></div>
+      </div>
+      <div class="admin-block">
+        <div class="admin-idx">02</div>
+        <div class="admin-center">
+          <div class="admin-name-big">Рулс Каард</div>
+          <div class="admin-roles-row"><span class="admin-badge">Со-владелец</span><span class="admin-badge muted">Правая рука владельца</span></div>
+        </div>
+        <div class="admin-right"><div class="admin-contact-lbl">Связь</div><div class="admin-handle">@bsJOJOS</div></div>
+      </div>
+      <div class="admin-block">
+        <div class="admin-idx">03</div>
+        <div class="admin-center">
+          <div class="admin-name-big">Коната Идзуми</div>
+          <div class="admin-roles-row"><span class="admin-badge">Технический инженер</span><span class="admin-badge muted">Создатель сайта и бота</span></div>
+        </div>
+        <div class="admin-right"><div class="admin-contact-lbl">Связь</div><div class="admin-handle">@jsAnotherPlayer</div></div>
+      </div>
+      <div class="admin-block">
+        <div class="admin-idx">04</div>
+        <div class="admin-center">
+          <div class="admin-name-big">Яра</div>
+          <div class="admin-roles-row"><span class="admin-badge">Монтажёр</span></div>
+        </div>
+        <div class="admin-right"><div class="admin-contact-lbl">Связь</div><div class="admin-handle tbd">@yara206702</div></div>
+      </div>
+      <div class="admin-block">
+        <div class="admin-idx">05</div>
+        <div class="admin-center">
+          <div class="admin-name-big">Мара</div>
+          <div class="admin-roles-row"><span class="admin-badge">Младший админ</span></div>
+        </div>
+        <div class="admin-right"><div class="admin-contact-lbl">Связь</div><div class="admin-handle tbd">@gerandium</div></div>
+      </div>
+      <div class="admin-block">
+        <div class="admin-idx">06</div>
+        <div class="admin-center">
+          <div class="admin-name-big">Коричневая Лягушка</div>
+          <div class="admin-roles-row"><span class="admin-badge">Сис. админ сервера</span><span class="admin-badge muted">Minecraft</span></div>
+        </div>
+        <div class="admin-right"><div class="admin-contact-lbl">Связь</div><div class="admin-handle tbd">@Myasnoy_Pacan</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROLES -->
+  <section id="roles" class="content-section">
+    <div class="roles-header-row">
+      <div>
+        <div class="section-over">Занятые персонажи</div>
+        <div class="section-big">РОЛИ</div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:12px;">
+        <span class="roles-date-badge">Актуальность: 04.04.2026</span>
+        <p class="roles-note">Актуальный список занятых ролей всегда можно посмотреть <a href="https://t.me/multifandomflodxinfo" target="_blank">по ссылке</a>. Ниже — срез на дату запуска этой страницы.</p>
+      </div>
+    </div>
+    <div class="roles-grid" id="rolesGrid">
+      <div class="role-card"><div class="role-num">01</div><div class="role-char">Финн Парнишка</div><div class="role-fandom">Время Приключений</div></div>
+      <div class="role-card"><div class="role-num">02</div><div class="role-char">Джейк</div><div class="role-fandom">Время Приключений</div></div>
+      <div class="role-card"><div class="role-num">03</div><div class="role-char">Русклс Каард</div><div class="role-fandom">Deltarune</div></div>
+      <div class="role-card"><div class="role-num">04</div><div class="role-char">Спамтон</div><div class="role-fandom">Deltarune</div></div>
+      <div class="role-card"><div class="role-num">05</div><div class="role-char">Рокочущий Рыцарь</div><div class="role-fandom">Дельтарун</div></div>
+      <div class="roles-hidden" id="rolesExtra">
+        <div class="role-card"><div class="role-num">06</div><div class="role-char">Ториэль</div><div class="role-fandom">Undertale</div></div>
+        <div class="role-card"><div class="role-num">07</div><div class="role-char">Папайрус</div><div class="role-fandom">Undertale</div></div>
+        <div class="role-card"><div class="role-num">08</div><div class="role-char">Элдер Фейр Куки</div><div class="role-fandom">Cookie Run Kingdom</div></div>
+        <div class="role-card"><div class="role-num">09</div><div class="role-char">Мара</div><div class="role-fandom">Call of Duty</div></div>
+        <div class="role-card"><div class="role-num">10</div><div class="role-char">Яра</div><div class="role-fandom">Оригинальный Персонаж</div></div>
+        <div class="role-card"><div class="role-num">11</div><div class="role-char">Маленький Призрак</div><div class="role-fandom">Hollow Knight</div></div>
+        <div class="role-card"><div class="role-num">12</div><div class="role-char">Масакрик</div><div class="role-fandom">Психоняшки</div></div>
+        <div class="role-card"><div class="role-num">13</div><div class="role-char">Minecraft</div><div class="role-fandom">Коричневая Лягушка</div></div>
+        <div class="role-card"><div class="role-num">14</div><div class="role-char">Ричард Трагер</div><div class="role-fandom">Outlast</div></div>
+        <div class="role-card"><div class="role-num">15</div><div class="role-char">Сатору Годжо</div><div class="role-fandom">Магическая Битва</div></div>
+        <div class="role-card"><div class="role-num">16</div><div class="role-char">Зенин Маки</div><div class="role-fandom">Магическая Битва</div></div>
+        <div class="role-card"><div class="role-num">17</div><div class="role-char">Юта Оккоцу</div><div class="role-fandom">Магическая Битва</div></div>
+        <div class="role-card"><div class="role-num">18</div><div class="role-char">Коната Идзуми</div><div class="role-fandom">Лаки Стар</div></div>
+        <div class="role-card"><div class="role-num">19</div><div class="role-char">Элегг</div><div class="role-fandom">Nikke Goddness of Victory</div></div>
+        <div class="role-card"><div class="role-num">20</div><div class="role-char">Асаба Харумаса</div><div class="role-fandom">Zenless Zone Zero</div></div>
+        <div class="role-card"><div class="role-num">21</div><div class="role-char">Гэри</div><div class="role-fandom">Губка боб: Квадратные Штаны</div></div>
+        <div class="role-card"><div class="role-num">22</div><div class="role-char">Джейк</div><div class="role-fandom">Dayshift at Freddy's</div></div>
+        <div class="role-card"><div class="role-num">23</div><div class="role-char">Минос Прайм</div><div class="role-fandom">Ultrakill</div></div>
+        <div class="role-card"><div class="role-num">24</div><div class="role-char">Чикони</div><div class="role-fandom">osu!</div></div>
+        <div class="role-card"><div class="role-num">25</div><div class="role-char">Шпион</div><div class="role-fandom">Team Fortress 2</div></div>
+      </div>
+    </div>
+    <div class="expand-wrap">
+      <button class="expand-btn" id="expandBtn" onclick="toggleRoles()">
+        <span id="expandBtnText">Показать все 25</span>
+        <i class="fas fa-chevron-down"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- RESTS -->
+  <section id="rests" class="content-section">
+    <div class="rests-layout">
+      <div>
+        <div class="section-over">Ограничения</div>
+        <div class="section-big">РЕСТЫ</div>
+      </div>
+      <div>
+        <p class="rests-text">Ресты — перерыв на неопределённый период времени, в котором можно не набирать норму.<br><br>Актуальный список рестов всегда можно посмотреть в <a href="https://t.me/multifandomflodxinfo" target="_blank"><em>инфо-канале нашего флуда</em></a>.</p>
+        <a href="https://t.me/multifandomflodxinfo" class="info-link" target="_blank">
+          <i class="fab fa-telegram"></i><span>Инфо-канал флуда</span><i class="fas fa-arrow-up-right-from-square" style="font-size:0.65em;"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="content-section">
+    <div class="section-header">
+      <div class="section-over">Чем мы выделяемся</div>
+      <div class="section-big">ОСОБЕННОСТИ</div>
+    </div>
+    <div class="features-list">
+      <div class="feature-block">
+        <div class="feature-block-inner">
+          <div class="feature-num">01</div>
+          <div class="feature-content">
+            <div class="feature-title">Функциональный сайт</div>
+            <p class="feature-text">Что нас отличает от других флудов? Начнём с того — в каких флудах вы увидите полноценный функциональный сайт с возможностью подачи заявки <em>напрямую или через бота</em>? Мы не просто чат — мы полноценный проект с собственной инфраструктурой, который продолжает развиваться.</p>
+          </div>
+        </div>
+      </div>
+      <div class="feature-divider"></div>
+      <div class="feature-block">
+        <div class="feature-block-inner">
+          <div class="feature-num">02</div>
+          <div class="feature-content">
+            <div class="feature-title">Майнкрафт сервер</div>
+            <p class="feature-text">У нас есть полноценный Minecraft-сервер для игры с участниками нашего флуда!</p>
+            <ul class="mc-list">
+              <li>Чтобы зайти на сервер, нужно обязательно быть участником флуда.</li>
+              <li>Сервер работает на <strong>белом списке</strong>. В будущем появится возможность отправить свой ник прямо из бота для добавления в whitelist, но на данный момент нужно писать <em>сис. админу</em>.</li>
+              <li>Норма для активных игроков сервера снижена. Актуальную норму можно узнать в <em>инфо-канале</em> или напрямую у владельца / со-владельца.</li>
+            </ul>
+            <div class="mc-plugin-note">
+              <p>Наш сервер имеет уникальный плагин для прямой синхронизации чата из Telegram в чат Minecraft! Чтобы писать из Minecraft в Telegram, используй команду <code>/tg сообщение</code>. Эти сообщения не идут в норму, так как отправляются от имени бота.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUPPORT -->
+  <section id="support" class="content-section">
+    <div class="section-header">
+      <div class="section-over">Нужна помощь?</div>
+      <div class="section-big">ПОДДЕРЖКА</div>
+    </div>
+    <p class="support-intro">Перед тем как написать — убедись, что обращаешься к нужному человеку. Это сэкономит время и тебе, и нам.</p>
+    <div class="support-grid">
+      <div class="support-row">
+        <div class="support-icon"><i class="fas fa-comments"></i></div>
+        <div class="support-body"><div class="support-situation">Вопросы по флуду: правила, участие, прочее</div><div class="support-who">Владелец / Со-владелец</div></div>
+        <div class="support-badge-wrap"><span class="support-badge">Финн · Рулс Каард</span></div>
+      </div>
+      <div class="support-row">
+        <div class="support-icon"><i class="fas fa-server"></i></div>
+        <div class="support-body"><div class="support-situation">Вопросы по Minecraft-серверу: whitelist, технические проблемы</div><div class="support-who">Сис. админ сервера</div></div>
+        <div class="support-badge-wrap"><span class="support-badge">Minecraft</span></div>
+      </div>
+      <div class="support-row">
+        <div class="support-icon"><i class="fas fa-robot"></i></div>
+        <div class="support-body"><div class="support-situation">Проблемы с ботом или сайтом, вопросы по их функционалу</div><div class="support-who">Технический инженер</div></div>
+        <div class="support-badge-wrap"><span class="support-badge">Коната Идзуми</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO -->
+  <section id="rules" class="content-section">
+    <div class="info-layout">
+      <div>
+        <div class="section-over" style="margin-bottom:8px;">О проекте</div>
+        <div class="section-big">ИНФО</div>
+      </div>
+      <div>
+        <p class="info-text">Проект живёт в Telegram. Все заявки рассматриваются администраторами вручную — мы смотрим на каждого внимательно.<br><br></p>
+        <a href="https://t.me/multifandomflodxinfo" class="info-link" target="_blank">
+          <i class="fab fa-telegram"></i><span>Канал с правилами</span><i class="fas fa-arrow-up-right-from-square" style="font-size:0.65em;"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<nav class="dock" id="mobileDock">
+  <div class="dock-track">
+    <div class="dock-pill"></div>
+    <button class="dock-btn active" data-tab="home"><i class="fas fa-house"></i><span class="dock-label">Главная</span></button>
+    <button class="dock-btn" data-tab="staff"><i class="fas fa-users"></i><span class="dock-label">Команда</span></button>
+    <button class="dock-btn" data-tab="roles"><i class="fas fa-mask"></i><span class="dock-label">Роли</span></button>
+    <button class="dock-btn" data-tab="rests"><i class="fas fa-moon"></i><span class="dock-label">Ресты</span></button>
+    <button class="dock-btn" data-tab="features"><i class="fas fa-star"></i><span class="dock-label">Особенности</span></button>
+    <button class="dock-btn" data-tab="support"><i class="fas fa-circle-question"></i><span class="dock-label">Поддержка</span></button>
+    <button class="dock-btn" data-tab="rules"><i class="fas fa-circle-info"></i><span class="dock-label">Инфо</span></button>
+  </div>
+
+  <div class="mobile-arrows">
+    <button class="arrow-btn" id="prevTab"><i class="fas fa-chevron-left"></i></button>
+    <button class="arrow-btn" id="nextTab"><i class="fas fa-chevron-right"></i></button>
+    <div class="arrow-label" id="currentTabLabel">
+      <div class="tab-mini" id="tabMini"></div>
+      <i class="fas fa-house"></i>
+      <span>Главная</span>
+    </div>
+  </div>
+</nav>
+
+<!-- MODAL -->
+<div id="applyModal" class="modal">
+  <div class="modal-inner">
+    <div class="modal-top-bar"></div>
+    <div class="modal-body">
+      <div class="modal-head">
+        <div class="modal-title-big">АНКЕТА</div>
+        <div class="modal-sub">Заявка на вступление в сообщество</div>
+      </div>
+      <div class="field-wrap">
+        <label class="field-lbl" for="role">Персонаж / Роль</label>
+        <input type="text" id="role" class="input-field" placeholder="Например: Эрен Йегер">
+      </div>
+      <div class="field-wrap">
+        <label class="field-lbl" for="fandom">Фандом</label>
+        <input type="text" id="fandom" class="input-field" placeholder="Например: Атака Титанов">
+      </div>
+      <div class="modal-actions">
+        <button class="btn-send" onclick="sendToBot()"><span>Отправить в Telegram</span><i class="fab fa-telegram"></i></button>
+        <button class="btn-cancel" onclick="closeModal()">Отмена</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
